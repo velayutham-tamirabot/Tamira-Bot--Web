@@ -84,25 +84,33 @@ export default function Contact() {
 
           {/* Info - takes 2 cols */}
           <motion.div {...fadeUp(0.15)} className="lg:col-span-2">
-            <h2 className="text-2xl md:text-3xl font-bold mb-8" style={{ color: '#24125F' }}>Get in Touch</h2>
-
-            <div className="space-y-7 mb-10">
-              {[
-                { icon: '📍', title: 'Office Address', text: 'IIT Madras Research Park, Chennai, Tamil Nadu 600113, India' },
-                { icon: '✉️', title: 'Email', text: 'info@tamirabot.com' },
-                { icon: '📞', title: 'Phone', text: '+91 81486 82557' },
-                { icon: '🕐', title: 'Working Hours', text: 'Mon – Fri: 9:00 AM – 6:00 PM IST' },
-              ].map((item) => (
-                <div key={item.title} className="flex gap-4">
-                  <div className="w-12 h-12 rounded-2xl flex items-center justify-center shrink-0 text-lg" style={{ background: 'rgba(36,18,95,0.06)' }}>
-                    {item.icon}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-sm" style={{ color: '#24125F' }}>{item.title}</p>
-                    <p className="text-sm mt-0.5" style={{ color: '#7D7D8C' }}>{item.text}</p>
-                  </div>
-                </div>
-              ))}
+            <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden mb-10 flex flex-col">
+              <div className="bg-[#24125F] px-6 py-4 flex items-center justify-between shrink-0">
+                <h3 className="text-sm font-bold text-white uppercase tracking-wider">Contact Information</h3>
+                <span className="w-2 h-2 rounded-full bg-[#F04F54]" />
+              </div>
+              <div className="overflow-x-auto flex-1">
+                <table className="w-full text-left text-[14px]">
+                  <tbody>
+                    {[
+                      { icon: '📍', title: 'Office Address', text: 'IIT Madras Research Park, Chennai, Tamil Nadu 600113, India' },
+                      { icon: '✉️', title: 'Email', text: 'info@tamirabot.com' },
+                      { icon: '📞', title: 'Phone', text: '+91 81486 82557' },
+                      { icon: '🕐', title: 'Working Hours', text: 'Mon – Fri: 9:00 AM – 6:00 PM IST' },
+                    ].map((item, idx) => (
+                      <tr key={idx} className="border-b border-gray-200 last:border-0 hover:bg-gray-50 transition-colors">
+                        <td className="px-6 py-4 font-bold text-[#24125F] border-r border-gray-200 w-2/5 sm:w-1/3 align-top">
+                          <div className="flex items-center gap-2.5">
+                            <span className="text-[#F04F54] text-base">{item.icon}</span>
+                            <span>{item.title}</span>
+                          </div>
+                        </td>
+                        <td className="px-6 py-4 text-gray-600 align-top leading-relaxed">{item.text}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
 
             {/* Map placeholder */}
