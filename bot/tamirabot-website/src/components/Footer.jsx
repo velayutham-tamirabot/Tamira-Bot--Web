@@ -39,7 +39,7 @@ export default function Footer() {
               <p>IIT Madras Research Park</p>
               <p>Chennai, Tamil Nadu, India</p>
               <p>info@tamirabot.com</p>
-              <p>+91 98765 43210</p>
+              <p>+91 81486 82557</p>
             </div>
           </div>
         </div>
