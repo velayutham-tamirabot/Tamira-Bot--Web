@@ -37,9 +37,7 @@ function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-[#24125F] pt-[80px]">
       {/* Subtle background texture */}
-      <div className="pointer-events-none absolute inset-0 opacity-[0.04]" aria-hidden="true">
-        <div className="absolute top-0 left-0 w-full h-full" style={{ backgroundImage: 'radial-gradient(circle at 20% 50%, #F04F54 0%, transparent 50%), radial-gradient(circle at 80% 20%, #F04F54 0%, transparent 40%)' }} />
-      </div>
+      <div className="pointer-events-none absolute -bottom-32 -left-32 w-[600px] h-[600px] rounded-full opacity-10" style={{ background: '#F04F54' }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full py-16 md:py-20 lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
