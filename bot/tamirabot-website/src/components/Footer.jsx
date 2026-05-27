@@ -36,8 +36,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-4 text-sm uppercase tracking-wide">Contact</h4>
             <div className="flex flex-col gap-2.5 text-sm text-white/50">
-              <p>IIT Madras Research Park</p>
-              <p>Chennai, Tamil Nadu, India</p>
+              <p>SF No. 70/3, Suriagounder Street</p>
+              <p>S N Patty, Dasanaickenpatti</p>
+              <p>Salem, Tamilnadu - 636201, India</p>
               <p>info@tamirabot.com</p>
               <p>+91 81486 82557</p>
             </div>

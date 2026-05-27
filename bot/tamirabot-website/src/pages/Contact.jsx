@@ -93,7 +93,7 @@ export default function Contact() {
                 <table className="w-full text-left text-[14px]">
                   <tbody>
                     {[
-                      { icon: '📍', title: 'Office Address', text: 'IIT Madras Research Park, Chennai, Tamil Nadu 600113, India' },
+                      { icon: '📍', title: 'Office Address', text: 'Tamirabot Advanced Engineering Private Limited, SF No. 70/3, Suriagounder Street, S N Patty, Dasanaickenpatti, Salem, Tamilnadu - 636201, India' },
                       { icon: '✉️', title: 'Email', text: 'info@tamirabot.com' },
                       { icon: '📞', title: 'Phone', text: '+91 81486 82557' },
                       { icon: '🕐', title: 'Working Hours', text: 'Mon – Fri: 9:00 AM – 6:00 PM IST' },
@@ -116,8 +116,8 @@ export default function Contact() {
             {/* Map placeholder */}
             <div className="rounded-2xl overflow-hidden border h-56 flex items-center justify-center" style={{ borderColor: '#E5E7EB', background: '#F7F7F7' }}>
               <div className="text-center">
-                <p className="text-sm font-medium" style={{ color: '#7D7D8C' }}>📍 IIT Madras Research Park</p>
-                <p className="text-xs mt-1" style={{ color: '#7D7D8C' }}>Chennai, Tamil Nadu</p>
+                <p className="text-sm font-medium" style={{ color: '#7D7D8C' }}>📍 SF No. 70/3, Suriagounder Street</p>
+                <p className="text-xs mt-1" style={{ color: '#7D7D8C' }}>S N Patty, Dasanaickenpatti, Salem, Tamilnadu - 636201</p>
               </div>
             </div>
 
